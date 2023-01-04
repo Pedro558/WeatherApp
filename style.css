@@ -32,10 +32,16 @@ button{
   margin: 0.5em;
   border-radius: 50%;
   border: none;
-  height: 2.5em;
-  width: 2.5em;
+  height: 3em;
+  width: 3em;
   outline: none;
   background: #0000007a;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover{
+  background: #7c7c7c6b;
 }
 
 .search-bar{
