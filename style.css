@@ -12,6 +12,10 @@ body {
   background-position: center center; 
 }
 
+.temp{
+  margin: 0;
+}
+
 .card{
   background: #0000008c;
   color: #fff;
