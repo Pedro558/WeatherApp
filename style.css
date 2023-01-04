@@ -4,12 +4,17 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: #222;
   font-family: 'open sans', sans-serif;
+  background-color: #8fc7f5;
+  background-image: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
 }
 
 .card{
-  background: #eaeaea;
+  background: #0000008c;
+  color: #fff;
   padding: 2em;
   border-radius: 30px;
   width: 100%;
