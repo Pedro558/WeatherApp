@@ -36,3 +36,14 @@ button{
   width: 2.5em;
   outline: none;
 }
+
+.search-bar{
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  border-radius: 24px;
+  background: #0000007a;
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+}
