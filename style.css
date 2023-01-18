@@ -73,6 +73,14 @@ button:hover{
   width: 70%;
 }
 
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-top: 40px;
+}
+
 .weather.loading{
   visibility: hidden;
   max-height: 20px;
