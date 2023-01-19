@@ -24,7 +24,7 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-body);
   background-color: #8fc7f5;
-  background-image: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-image: url('https://source.unsplash.com/random/?weather');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
@@ -93,7 +93,7 @@ button:hover{
   text-transform: uppercase;
 }
 
-.weather.loading{
+/*.weather.loading{
   visibility: hidden;
   max-height: 20px;
   position: relative;
@@ -106,10 +106,10 @@ button:hover{
   position: absolute;
   top: 0;
   left: 20px;
-}
+}*/
 
 .city{
-  font-size: clamp(20px, 6px + 4vw, 32px);
+  font-size: clamp(20px, 6px + 4vw, 28px);
 }
 
 .temp{
