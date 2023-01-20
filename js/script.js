@@ -16,14 +16,14 @@ let searchWeather = {
     console.log(name, icon, description, temp, humidity, speed);
 
     
-    document.querySelector(".city").innerText = `Weather in ${name}`
-    document.querySelector('.icon').src = `https://openweathermap.org/img/wn/${icon}.png`
-    document.querySelector('.description').innerText = description
-    document.querySelector('.temp').innerText = `${temp.toFixed(0)} °C`
-    document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`
-    document.querySelector('.wind').innerText = `Wind speed: ${speed}km/h`
-    document.querySelector('.weather').classList.remove('loading')
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ name +"')"
+    cityElem.innerText = `Weather in ${name}`
+    iconElem.src = `https://openweathermap.org/img/wn/${icon}.png`
+    descElem.innerText = description
+    tempElem.innerText = `${temp.toFixed(0)} °C`
+    humidityElem.innerText = `Humidity: ${humidity}%`
+    windElem.innerText = `Wind speed: ${speed}km/h`
+    weatherElem.classList.remove('loading')
+    bodyElem.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+ name +"')"
   },
   search: function(){
     this.fetchWeather(document.querySelector('.search-bar').value)
