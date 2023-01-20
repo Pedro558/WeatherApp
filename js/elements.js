@@ -1,19 +1,19 @@
-const city =  document.querySelector(".city")
-const icon =  document.querySelector('.icon')
-const description =  document.querySelector('.description')
-const temperature =  document.querySelector('.temp')
-const humidity = document.querySelector('.humidity')
-const wind = document.querySelector('.wind')
-const weather = document.querySelector('.weather')
-const body =  document.body
+const cityElem =  document.querySelector(".city")
+const iconElem =  document.querySelector('.icon')
+const descElem =  document.querySelector('.description')
+const tempElem =  document.querySelector('.temp')
+const humidityElem = document.querySelector('.humidity')
+const windElem = document.querySelector('.wind')
+const weatherElem = document.querySelector('.weather')
+const bodyElem =  document.body
 
 export {
-  city,
-  icon,
-  description,
-  temperature,
-  humidity,
-  wind,
-  weather,
-  body
+  cityElem,
+  iconElem,
+  descElem,
+  tempElem,
+  humidityElem,
+  windElem,
+  weatherElem,
+  bodyElem
 }

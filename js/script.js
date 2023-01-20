@@ -1,4 +1,6 @@
-let weather = {
+import { cityElem, iconElem, descElem, tempElem, humidityElem, windElem, weatherElem, bodyElem} from "./elements.js"
+
+let searchWeather = {
   apiKey: "69aa8e0da4a62bfeac16a488398c391f",
   fetchWeather: function(city) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${this.apiKey}`)
@@ -29,12 +31,12 @@ let weather = {
 }
 
 document.querySelector(".search button").addEventListener('click', () =>{
-  weather.search()
+  searchWeather.search()
 })
 
 document.querySelector(".search-bar").addEventListener('keyup', (event)=>{
   if(event.key == 'Enter'){
-    weather.search()
+    searchWeather.search()
   }
 })
 
