@@ -2,13 +2,17 @@ import {  weatherElem, bodyElem, searchBar, searchButton } from "./elements.js"
 
 class SearchWeather{
     async fetchWeather(city){
-      const apiKey = "69aa8e0da4a62bfeac16a488398c391f"
-      const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
-
-      const data = await fetch(endpoint)
-      const results = await data.json()
-      
-      this.displayWeather(results)
+      try{
+        const apiKey = "69aa8e0da4a62bfeac16a488398c391f"
+        const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
+  
+        const data = await fetch(endpoint)
+        const results = await data.json()
+        
+        this.displayWeather(results)
+      } catch(error){
+        weatherElem.innerHTML = `<h2>Digite um nome válido</h2>`
+      }
   }
 
   displayWeather(results){  
