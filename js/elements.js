@@ -6,6 +6,8 @@ const humidityElem = document.querySelector('.humidity')
 const windElem = document.querySelector('.wind')
 const weatherElem = document.querySelector('.weather')
 const bodyElem =  document.body
+const searchBar = document.querySelector('.search-bar')
+const searchButton = document.querySelector(".search button")
 
 export {
   cityElem,
@@ -15,5 +17,8 @@ export {
   humidityElem,
   windElem,
   weatherElem,
-  bodyElem
+  bodyElem,
+  searchBar,
+  searchButton
+
 }

@@ -1,4 +1,4 @@
-import { cityElem, iconElem, descElem, tempElem, humidityElem, windElem, weatherElem, bodyElem} from "./elements.js"
+import { cityElem, iconElem, descElem, tempElem, humidityElem, windElem, weatherElem, bodyElem, searchBar, searchButton} from "./elements.js"
 
 class SearchWeather{
     async fetchWeather(city){
@@ -17,9 +17,6 @@ class SearchWeather{
     const { temp, humidity } = results.main
     const { speed } = results.wind
     
-    console.log(name, description, icon, temp, humidity, speed);
-
-    
     cityElem.innerText = `Weather in ${name}`
     iconElem.src = `https://openweathermap.org/img/wn/${icon}.png`
     descElem.innerText = description
@@ -32,17 +29,17 @@ class SearchWeather{
   }
 
   search(){
-    this.fetchWeather(document.querySelector('.search-bar').value)
+    this.fetchWeather(searchBar.value)
   }
 }
 
 const weather = new SearchWeather()
 
-document.querySelector(".search button").addEventListener('click', () =>{
+searchButton.addEventListener('click', () =>{
   weather.search()
 })
 
-document.querySelector(".search-bar").addEventListener('keyup', (event)=>{
+searchBar.addEventListener('keyup', (event)=>{
   if(event.key == 'Enter'){
     weather.search()
   }
