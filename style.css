@@ -32,7 +32,6 @@ body {
 
 .card{
   width: 100%;
-  height: clamp(35rem, 20rem + 30vh, 45rem);
   max-width: clamp(40rem, 30rem + 30vw, 55rem);
   background: var(--gradient-card);
   color: var(--font-color);
