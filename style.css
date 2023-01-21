@@ -24,10 +24,11 @@ body {
   font-family: var(--font-family);
   font-size: var(--font-body);
   background-color: #8fc7f5;
-  background-image: url('https://source.unsplash.com/random/?weather');
+  background-image: url("https://source.unsplash.com/1600x900/?weather");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; 
+  transition: background 2s linear 2.5s;
 }
 
 .card{
@@ -91,21 +92,6 @@ button:hover{
 .description:first-letter {
   text-transform: uppercase;
 }
-
-/*.weather.loading{
-  visibility: hidden;
-  max-height: 20px;
-  position: relative;
-}
-
-.weather.loading:after{
-  visibility: visible;
-  content: 'Loading...';
-  color: var(--font-color);
-  position: absolute;
-  top: 0;
-  left: 20px;
-}*/
 
 .city{
   font-size: clamp(20px, 6px + 4vw, 28px);
